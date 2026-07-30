@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="media.css">
+</head>
+<body>
+   <!--top bar-->
+    <div class=finial>
+    <div class="top-bar">
+        <i class="fa-solid fa-circle"></i>
+        <span id="c1">LIVE INVENTORY STATUS:FULLY OPERATIONAL</span>
+    </div>
+    <!--navbar-->
+    <nav>
+        <div class="logo"></div>
+        <ul id="menu">
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="features.html">FEATURES</a></li>
+            <li><a href="module.html">MODULES</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+            <li><a href="contect.html" class="active">CONTECT US</a></li>
+        </ul>
+        <div class="btn">
+            <h id="sign">Sign In</h>
+            <button id="book">Book demo</button>
+        </div>
+        <span class="menubtn" onClick="openMenu()">&#9776</span>
+        <span class="closebtn" onClick="closeMenu()">&#9746</span>
+    </nav>
+    </div>
+    <main>
+        <div class="contect">
+            <div id="helpd">
+                <span>INVENTORY HELPDESK</span>
+                <h1>Support & Inquiries</h1>
+                <p>Need operational support or custom sourcing agreements? Dispatch a note directly to our <br> logistics hub operators.</p>
+            </div>
+            <div class="part2">
+                <form class="foms">
+                    <div class="name">
+                        <div class="you">
+                            <label>YOUR NAME</label>
+                            <div class="doe">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" placeholder="john doe" required>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <label>OFFICAL EMAIL</label>
+                            <div class="doe">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="text" placeholder="john doe@stockflow.com" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dep">
+                        <label>TARGET DEPARTMENT</label>
+                        <select>
+                            <option>Opratins Sourcing</option>
+                            <option>Licensing $ Billing</option>
+                            <option>Tecnical Helpdesk</option>
+                        </select>
+                    </div>
+                    <div >
+                        <label id="ink">MESSAGE / INQUIRY DETAILS</label>
+                        <textarea placeholder="Dtail your request or support quation" class="text9"></textarea>
+                    </div>
+                    <button class="btn9">
+                        <span>Dispach Helpdesk Note</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="sec4">
+                    <div class="logic">
+                        <h3>Centralized Logistics Hub</h3>
+                        <p>Direct support contacts</p>
+                    </div>
+                    <div class="parop">
+                        <div class="dot1">
+                            <i class="fa-solid fa-location-dot icon"></i>
+                            <div class="teckno">
+                                <p class="plz">Corporate Headquarters</p>
+                                <p class="flow">100 Technology Plaza, Silicon Valley, CA 94025</p>
+                            </div>
+                        </div>
+                        <div class="dot1">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <div class="teckno">
+                                <p class="plz">Emergency Logistics</p>
+                                <p class="flow">+1 (800) 555-FLOW</p>
+                            </div>
+                        </div>
+                        <div class="dot1">
+                            <i class="fa-solid fa-envelope icon"></i>
+                            <div class="teckno">
+                                <p class="plz">Official Correspondence</p>
+                                <p class="flow">support@stockflow.com</p>
+                            </div>
+                        </div>
+                        <div class="average">
+                            <i class="fa-solid fa-circle-info icon"></i>
+                            <span>Average operator response latency is 14 minutes.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+     <footer class="footer">
+        <div class="fbar">
+            <div class="footer1">
+                <div class="list1">
+                    <div class="flogo">
+                        <img src="logo.png">
+                    </div>
+                    <p>Real-time corporate stock coordination, supply tracking, and quick quote acquisition for enterprise corporations and commercial logistics operations for the inventory stocks and product purposes.</p>
+                </div>
+                <div class="list1">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li>Overview Home</li>
+                         <li>About Us</li>
+                          <li>System Modules</li>
+                           <li>Stock Catalog</li>
+                            <li>Operator Access</li>
+                             <li>Register Account</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                     <h4>ASSET CATEGORIES</h4>
+                    <ul>
+                        <li>Corporate Electronics</li>
+                         <li>Corporate Apparel</li>
+                          <li>Kitchen & Dining Supplies</li>
+                           <li>Office Furniture & Chairs</li>
+                            <li>Industrial Tools & Equipment</li>
+                             <li>Corporate Vehicles & Machinery</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                     <h4>SUPPORT & HELP</h4>
+                     <ul>
+                        <li>E-51, Second Floor, Phase-8, Industrial Area,<br> S.A.S. Nagar, Punjab 160071</li>
+                         <li>+91 9646522110</li>
+                          <li>sortiqsolutions@gmail.com</li>
+                          </ul>
+                          <div class="ic">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                          </div>
+                </div>
+    
+
+    
+    </footer>
+    <div class="by">© 2026 Sortiq Solutions Pvt. Ltd. All rights reserved.</div>
+     <script src="index.js"></script>
+</body>
+</html>

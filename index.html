@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+  
+</head>
+
+<body>
+    <!--top bar-->
+    <div class=finial>
+    <div class="top-bar">
+        <i class="fa-solid fa-circle"></i>
+        <span id="c1">LIVE INVENTORY STATUS:FULLY OPERATIONAL</span>
+    </div>
+    <!--navbar-->
+    <nav>
+        <div class="logo"></div>
+        <ul id="menu">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="features.html">FEATURES</a></li>
+            <li><a href="module.html">MODULES</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+            <li><a href="contect.html">CONTECT US</a></li>
+        </ul>
+        <div class="btn">
+            <h id="sign">Sign In</h>
+            <button id="book">Book demo</button>
+        </div>
+        <span class="menubtn" onClick="openMenu()">&#9776</span>
+        <span class="closebtn" onClick="closeMenu()">&#9746</span>
+    </nav>
+    </div>
+    <!--hero section-->
+    <section id="first">
+
+        <div class="hero">
+            <p id="s">SMART ENTERPRISE INVENTORY SYSTEM</p>
+
+            <div>
+                <h1 class="hd">
+                    All-in-One Enterprise
+                <span class="color">Inventory sourcing</span>
+                </h1>
+                
+            </div>
+            <p id="para">Coordinate warehouse stocks, dispatch quote inquiries, track safety limits, and connect
+                departments in one unified platform built for organizations that want cleaner procurement operations.
+            </p>
+            <div class="btn2">
+                <button class="b1">Book Demo</button>
+                <button class="b2">Free Trial</button>
+            </div>
+            <div class="price">
+                <div class="box">
+                     <span class="amt">50+</span>
+                    <span class="info">WAREHOUSES</span>
+                </div>
+                <div class="box" id="hov">
+                    <span class="amt">1,200+</span>
+                    <span class="info">ACTIVE SUPPLIERS</span>
+
+                </div>
+                <div class="box" id="hovr">
+                    <span class="amt">99.98%</span>
+                    <span class="info">INVENTORY PRECISION</span>
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="img.avif" alt="">
+        </div>
+    </section>
+    <!--sec section-->
+    <section id="sec">
+        <div class="stock">
+            <div>
+                <span class="mod">INVENTORY MODULES</span>
+                <h2 class="work">Everything a procurement team need to run daily <br>work</h2>
+            </div>
+            <div class="asset">
+                <div class="btn3">
+                    <button class="bal" id="line">
+                        <i class="fa-solid fa-chart-line"></i><br>
+                        <span id="spn">Stock Balances</span>
+                    </button>
+                    <button class="bal" id="two">
+                        <i class="fa-solid fa-cube"></i><br>
+                        <span>Asset Registry</span>
+                    </button>
+                    <button class="bal" id="thr">
+                        <i class="fa-regular fa-compass"></i><br>
+                        <span>Safety Margins</span>
+                    </button>
+                    <button class="bal" id="fr">
+                        <i class="fa-solid fa-basket-shopping"></i><br>
+                        <span>Sourcing Cart</span>
+                    </button>
+                    <button class="bal" id="fif">
+                        <i class="fa-regular fa-user"></i><br>
+                        <span>Suppliers Hub</span>
+                    </button>
+                    <button class="bal" id="six">
+                        <i class="fa-solid fa-shield"></i><br>
+                        <span>Comliance Log</span>
+                    </button>
+                </div>
+                <div class="hii">
+                    <div class="core">
+                        <h3>Stock Balance Tickers</h3>
+                        <span>LOGISTIC CORE</span>
+
+                    </div>
+                    <div class="grid">
+                        <div class="check">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <div>
+                                <h4>Live Stock Counts</h4>
+                                <p>Real-time updates on active catalog levels</p>
+                            </div>
+                        </div>
+                        <div class="check">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <div>
+                                <h4>SKU Identifier Lookup</h4>
+                                <p>Instantly fetch specific serial codes and suppliers</p>
+                            </div>
+                        </div>
+                        <div class="check">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <div>
+                                <h4>Category Sorting</h4>
+                                <p>Group items into Electronics, Apparel, or Furniture</p>
+                            </div>
+                        </div>
+                        <div class="check">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <div>
+                                <h4>Batch Expirations</h4>
+                                <p>Track laboratory reagent and supply dates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="and">
+                        <button class="and-button" onclick="toggleList()">
+                            <span>Explore Deep Specifications</span>
+                            <i id="arrow" class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <div id="specs" class="hidden">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-shield"></i>
+                                    <span class="with"> Low latency database updates in under 200ms</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-shield"></i>
+                                    <span class="with">Dynamic allocation algorithm to avoid double-booking</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-shield"></i>
+                                    <span class="with">Automated stock level caching with local storage backup</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-shield"></i>
+                                    <span class="with">Supports barcode reader integration directly</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="third">
+        <div class="part3">
+            <div class="arrow">
+                <div>
+                    <span>LIVE STOCK OVERVIEW</span>
+                    <h2>Featured Supplies Overview</h2>
+                </div>
+                <a href="">Explore Full Catalog<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="card">
+                <!--first card-->
+                <div class="squre">
+                    <div class="posit">
+                        <img src="photo1.avif" class="img">
+                        <span class="el">ELECTRONIC</span>
+                    </div>
+                    <div class="mx">
+                        <div class="per">
+                            <h4>iPhone 15 Pro Max</h4>
+                            <p>Titanium design, A17 Pro chip, custom Action button, and a powerful 3x or 5x
+                                Telephoto....</p>
+                        </div>
+                        <div class="unit">
+                            <span class="nine">$1199</span>
+                            <span class="one">15 units</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!--sec card-->
+                <div class="squre">
+                    <div class="posit">
+                        <img src="photo2.avif" class="img">
+                        <span class="el">ELECTRONIC</span>
+                    </div>
+                    <div class="mx">
+                        <div class="per">
+                            <h4>MacBook Air M3</h4>
+                            <p>Supercharged by the next-generation M3 chip, with up to 18 hours of battery life and a stunning Liquid Retina....</p>
+                        </div>
+                        <div class="unit">
+                            <span class="nine">$1299</span>
+                            <span class="one">8 units</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!--third card-->
+                 <div class="squre">
+                    <div class="posit">
+                        <img src="photo3.avif" class="img">
+                        <span class="el">ELECTRONIC</span>
+                    </div>
+                    <div class="mx">
+                        <div class="per">
+                            <h4>Sony WH-1000XM5</h4>
+                            <p>Industry-leading noise cancellation, exceptional sound quality, and crystal-clear hands-free calling....</p>
+                        </div>
+                        <div class="unit">
+                            <span class="nine">$349</span>
+                            <span class="one">3 units</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--section four-->
+    <section class="four">
+        <div class="src">
+            <div class="why">
+                <div>
+                    <span>WHY TEAMS CHOOSE US</span>
+                    <h2>Built for the real rhythm of corporate and enterprise warehouses.</h2>
+                </div>
+                <a href="">About Stock flow</a>
+            </div>
+            <div class="box3">
+            <div class="sours" id="fi">
+                <div class="nom">
+                    01
+
+                </div>
+                <div class="faster">
+                <h4>Faster sourcing</h4>
+                <p>Bust procurement delays, compile request lists, and dispatch unified inquiries in clicks.</p>
+                </div>
+            </div>
+            <div class="sours" id="se">
+                <div class="nom" id="green">
+                    02
+
+                </div>
+                <div class="faster">
+                    <h4>Cleaner operations</h4>
+                <p>Keep stock, suppliers, wishlist bookmarks, and fulfillment logs connected seamlessly.</p>
+                </div>
+            </div>
+            <div class="sours" id="purpl">
+                <div class="nom" id="prp">
+                    03
+
+                </div>
+                <div class="faster">
+                <h4>Better auditing</h4>
+                <p>Maintain exact tracking precision with secure session credentials and reference audit keys.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--section5-->
+    <section class="fifth">
+        <div class="ware">
+            <div class="uniq">
+            <div class="ver">
+                <span>VERIFIED STOCK WORKFLOWS</span>
+                <h2>Built for teams that run warehouses every day.</h2>
+                <p>From office requests to final bulk supply dispatches, StockFlow keeps inventory registers, suppliers, and safety alert margins connected.</p>
+            </div>
+            <div class="supply">
+                <div class="two">
+                    <span>50+</span>
+                    <p>WAREHOUSES</p>
+                </div>
+                <div class="two">
+                    <span>1,200+</span>
+                    <p>SUPPLIERS</p>
+                </div>
+                <div class="two">
+                    <span>1.5s</span>
+                    <p>ALLOCATIONS</p>
+                </div>
+            </div>
+            </div>
+            <div id="cat">
+                <div class="last" id="pink">
+                <span class="multi">Multi-warehouse setup</span>
+                <p>Structured catalog allocation limits across different departments and localized stocks.</p>
+                </div>
+                <div class="last" id="yell">
+                <span class="multi">Inventory visibility</span>
+                <p>Live indicators representing In Stock or Low Stock counts visible to logged-in buyers.</p>
+                </div>
+                <div class="last" id="blue">
+                <span class="multi">Supplier confidence</span>
+                <p>Consolidated quote dispatches and pre-vetted catalog pricing optimize buying routes.</p>
+                </div>
+                <div class="last" id="sky">
+                <span class="multi">Secure role access</span>
+                <p>Authorized operators and buyers can access the cart and submit dispatch requests.</p>
+                </div>
+               
+        
+            </div>
+        </div>
+    </section>
+    <!--section six-->
+    <section class="six">
+        <div class="js">
+            <div class="upr">
+                <div class="see">
+                    <span>PRODUCT WALKTHROUGH</span>
+                    <h2>See the Sourcing System in action.</h2>
+                    <p>Watch the video of the product and go through the features and functionality.</p>
+                </div>
+                <div class="photo5">
+                    <img src="photo5.avif">
+                </div>
+                <div class="allo">
+                    <span>STOCK ALLOCATION</span>
+                    <span>PROCUREMENT CART</span>
+                    <span>SUPPLIER AUDITING</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="font-box">
+                    <div class="top">
+                        <div>
+                            <h2>Schedule your demo</h2>
+                            <p>Share your details and our team will contect you.</p>
+                        </div>
+                            <span class="live-btn"> LIVE DEMO</span>
+                    </div>
+                        
+                            <form>
+                                <div class="row">
+                                    <div class="input-box">
+                                        <lable>YOUR NAME</lable>
+                                        <input type="'text" placeholder="Name">
+                                    </div>
+                                    <div class="input-box">
+                                            <lable>PHONE NUMBER</lable>
+                                            <input type="text" placeholder="+91">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                                <div class="input-box">
+                                                <lable>EMAIL ADDRESS</lable>
+                                                <input type="email" placeholder="yourname@gmail.com">
+                                                </div>
+                                                <div class="input-box">
+                                                    <lable>ORGANIZATION NAME</lable>
+                                                    <input type="text" placeholder="organization name">
+                                                </div>
+                                </div>
+                                                    <div class="input-box full">
+                                                        <lable>PRIORITY MODULE</lable>
+                                                        <select id="MODULE" name="MODULE"> 
+                                                            <option value="Complete Sourcing system">Complete Sourcing system</option>
+                                                             <option value="HR MANAGEMENT">HR MANAGEMENT</option>
+                                                              <option value="CRM">CRM</option>
+                                                        </select>
+                                    </div>
+                                                        <button class="ldemo">Book Live Demo</button>
+                            </form>
+                </div>
+             </div>
+
+        </div>
+
+    </section>
+    <div class="none"></div>
+    <!--footer-->
+    <footer class="footer">
+        <div class="fbar">
+            <div class="footer1">
+                <div class="list1">
+                    <div class="flogo">
+                        <img src="logo.png">
+                    </div>
+                    <p>Real-time corporate stock coordination, supply tracking, and quick quote acquisition for enterprise corporations and commercial logistics operations for the inventory stocks and product purposes.</p>
+                </div>
+                <div class="list1">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li>Overview Home</li>
+                         <li>About Us</li>
+                          <li>System Modules</li>
+                           <li>Stock Catalog</li>
+                            <li>Operator Access</li>
+                             <li>Register Account</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                     <h4>ASSET CATEGORIES</h4>
+                    <ul>
+                        <li>Corporate Electronics</li>
+                         <li>Corporate Apparel</li>
+                          <li>Kitchen & Dining Supplies</li>
+                           <li>Office Furniture & Chairs</li>
+                            <li>Industrial Tools & Equipment</li>
+                             <li>Corporate Vehicles & Machinery</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                     <h4>SUPPORT & HELP</h4>
+                     <ul>
+                        <li>E-51, Second Floor, Phase-8, Industrial Area,<br> S.A.S. Nagar, Punjab 160071</li>
+                         <li>+91 9646522110</li>
+                          <li>sortiqsolutions@gmail.com</li>
+                          </ul>
+                          <div class="ic">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                          </div>
+                </div>
+    
+
+    
+    </footer>
+    <div class="by">© 2026 Sortiq Solutions Pvt. Ltd. All rights reserved.</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
